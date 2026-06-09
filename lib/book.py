@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Book model for the Bookstore application
 
 class Book:
     def __init__(self, title, page_count):
