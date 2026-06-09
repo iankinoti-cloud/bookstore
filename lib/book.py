@@ -2,4 +2,5 @@
 
 class Book:
     def __init__(self, title, page_count):
-        pass
+        self.title = title
+        self.page_count = page_count
