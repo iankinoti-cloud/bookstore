@@ -2,4 +2,5 @@
 
 class Coffee:
     def __init__(self, size, price):
-        pass
+        self.size = size
+        self.price = price
