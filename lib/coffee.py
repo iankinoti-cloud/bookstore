@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Coffee model for the Bookstore application
 
 class Coffee:
     def __init__(self, size, price):
@@ -17,5 +18,5 @@ class Coffee:
             self._size = value
 
     def tip(self):
-        print("This coffee is great, here's a tip!")
+        print("This coffee is great, here’s a tip!")
         self.price += 1
