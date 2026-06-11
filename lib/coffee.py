@@ -12,7 +12,7 @@ class Coffee:
 
     @size.setter
     def size(self, value):
-        if value not in ["Small", "Medium", "Large"]:
+        if not isinstance(value, str) or value not in ["Small", "Medium", "Large"]:
             print("size must be Small, Medium, or Large")
         else:
             self._size = value
