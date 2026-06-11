@@ -1,3 +1,4 @@
+
 # Object Oriented Programming Lab - Bookstore 
 
 This scenario should encompass all of the topics provided in the module. Now that you’ve delved into creating a new class in Python it is now time to practice this concept.
@@ -126,7 +127,41 @@ Best Practice documentation steps:
 * Update README text to reflect the functionality of the application following https://makeareadme.com.
 * Delete any stale branches on GitHub
 * Remove unnecessary/commented out code
-* If needed, update git ignore to remove sensitive data 
+* If needed, update git ignore to remove sensitive data
+
+## Implementation
+
+### Book class (`lib/book.py`)
+
+```python
+book = Book("And Then There Were None", 272)
+book.title       # "And Then There Were None"
+book.page_count  # 272
+book.turn_page() # prints: Flipping the page...wow, you read fast!
+
+# Validation
+book.page_count = "lots"  # prints: page_count must be an integer
+```
+
+### Coffee class (`lib/coffee.py`)
+
+```python
+latte = Coffee(size="Large", price=3.50)
+latte.size   # "Large"
+latte.price  # 3.50
+latte.tip()  # prints: This coffee is great, here's a tip!
+             # price is now 4.50
+
+# Validation
+latte.size = "Venti"  # prints: size must be Small, Medium, or Large
+```
+
+### Running the tests
+
+```console
+$ pipenv install
+$ pipenv run pytest lib/testing/
+```
 
 ## Save your work and push to GitHub
 
