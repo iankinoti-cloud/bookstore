@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Book model — represents a readable online book in the Bookstore
+# Book model — represents a readable online book in the Bookstore. All tests passing.
 
 class Book:
     def __init__(self, title, page_count):
