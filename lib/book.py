@@ -12,7 +12,7 @@ class Book:
 
     @page_count.setter
     def page_count(self, value):
-        if not isinstance(value, int):
+        if not isinstance(value, int) or isinstance(value, bool):
             print("page_count must be an integer")
         else:
             self._page_count = value
