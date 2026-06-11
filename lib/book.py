@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Book model for the Bookstore application
+# Book model — represents a readable online book in the Bookstore
 
 class Book:
     def __init__(self, title, page_count):

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Coffee model for the Bookstore application
+# Coffee model — represents a coffee item sold by the Bookstore
 
 class Coffee:
     def __init__(self, size, price):
